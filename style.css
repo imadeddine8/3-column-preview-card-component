@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    background: hsl(0, 0%, 95%);
+}
+/*  */
+.card{
+    display: flex;
+    width: 950px;
+    height: 500px;
+    margin: auto;
+    margin-top: 60px;
+}
+/* Sedan Card */
+.card .sedans{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/* Suv Card */
+.card .suvs{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+/* Luxury Card */
+.card .luxury{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* All Icon cards*/
+.card .sedans img,
+.card .suvs img,
+.card .luxury img{
+    padding-left: 40px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+/* All Title Cards */
+.card .sedans h2,
+.card .suvs h2,
+.card .luxury h2{
+    padding-left: 40px;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+/* All Paragraph Cards */
+.card .sedans p,
+.card .suvs p,
+.card .luxury p{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-left: 40px;
+    padding-right: 130px;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 90px;
+}
+/* All Button Cards */
+button{
+    margin-left: 40px;
+    width: 130px;
+    height: 42px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+/* Sedan Button */
+.card .sedans button{
+    color: hsl(31, 77%, 52%);
+}
+/* Suv Button */
+.card .suvs button{
+    color: hsl(184, 100%, 22%);
+}
+/* Luxury Button */
+.card .luxury button{
+    color: hsl(179, 100%, 13%);
+}
+/* Active Mode */
+.card .sedans button:active{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    cursor: pointer;
+}
+.card .suvs button:active{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    cursor: pointer;
+}
+.card .luxury button:active{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width:375px){
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 33.3%;
+        margin-top: 0;
+    }
+    .card .sedans{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .card .luxury{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    button{
+        margin-bottom: 40px;
+    }
+}
